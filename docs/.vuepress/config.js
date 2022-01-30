@@ -63,7 +63,16 @@ module.exports = {
                     text: 'CSS'
                 }
             ]
-        }, 
+        },
+        {
+            text: 'Tutorials',
+            children: [
+                {
+                    link: '/tutorials/plugin-development.md',
+                    text: 'Plugin Development'
+                }
+            ]
+        },
         {
             text: 'Electron',
             link: '/electron/'
