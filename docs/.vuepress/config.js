@@ -68,7 +68,7 @@ module.exports = {
             text: 'Tutorials',
             children: [
                 {
-                    link: '/tutorials/plugin-development.md',
+                    link: '/tutorials/plugin-development-setup.md',
                     text: 'Plugin Development'
                 }
             ]
@@ -110,6 +110,21 @@ module.exports = {
             {
                 text: 'Learnings',
                 link: '/electron/learnings.md'
+            }
+        ],
+        '/tutorials': [
+            {
+                text: 'Wordpress',
+                children: [
+                    {
+                        text: 'Plugin Development Setup',
+                        link: '/tutorials/plugin-development-setup.md'
+                    },
+                    {
+                        text: 'Plugin Development Template & Database',
+                        link: '/tutorials/plugin-development-template.md'
+                    },
+                ]
             }
         ]
     }
