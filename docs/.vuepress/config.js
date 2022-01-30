@@ -27,6 +27,44 @@ module.exports = {
             ]
         }, 
         {
+            text: 'Backend',
+            children: [
+                {
+                    link: '/backend/nodejs.md',
+                    text: 'NodeJS'
+                }, 
+                {
+                    link: '/backend/php.md',
+                    text: 'PHP'
+                }
+            ]
+        }, 
+        {
+            text: 'Frontend',
+            children: [
+                {
+                    link: '/frontend/frameworks/vuejs.md',
+                    text: 'VueJs'
+                }, 
+                {
+                    link: '/frontend/frameworks/angular.md',
+                    text: 'Angular'
+                },
+                {
+                    link: '/frontend/frameworks/react.md',
+                    text: 'React'
+                },
+                {
+                    link: '/frontend/html.md',
+                    text: 'HTML'
+                },
+                {
+                    link: '/frontend/css.md',
+                    text: 'CSS'
+                }
+            ]
+        }, 
+        {
             text: 'Electron',
             link: '/electron/'
         },
