@@ -2,7 +2,7 @@ module.exports = {
   // site config
   lang: 'de-DE',
   title: 'Persönlicher Blog - Kevin Fechner',
-  description: 'This is my first VuePress site',
+  description: '(Un)interessante Dinge im Leben eines Entwicklers',
 
   // theme and its config
   theme: '@vuepress/theme-default',
@@ -29,6 +29,10 @@ module.exports = {
         {
             text: 'Electron',
             link: '/electron/'
+        },
+        {
+            text: 'Fitness',
+            link: '/fitness/'
         }
     ],
     sidebar: {
