@@ -11,6 +11,7 @@ Ich muss sagen, dass Vue2 die beste Dokumentation bis dato hatte. Mit der Compos
 
 
 ### Tools
+One of the biggest disadvantages for using Vue3 is that some frameworks are still not ready Vue2. 
 
 #### Vue use (core)
 

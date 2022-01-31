@@ -74,6 +74,20 @@ module.exports = {
             ]
         },
         {
+            text: 'Miscellaneous',
+            children: [
+                {
+                    link: '/interesting/tailwindcss.md',
+                    text: 'TailwindCss'
+                },
+                {
+                    link: '/interesting/resources.md',
+                    text: 'Resources'
+                },
+                
+            ]
+        },
+        {
             text: 'Electron',
             link: '/electron/'
         },

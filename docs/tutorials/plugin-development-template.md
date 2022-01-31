@@ -91,3 +91,158 @@ in class-sample-plugin.php
 ```
 
 ## Database
+For our Database we'll use php namespaces. If you have experience using NPM (Node Package Manager), there is an Php equivalent called [Composer](https://getcomposer.org/).
+
+We'll create a directory called 'src/Sample' in our plugin root.
+
+```php
+<?php
+namespace Sample;
+use Sample\Helpers;
+
+class DatabaseTable {
+    const VERSION = '1.0.0';
+    const TABLE_NAME = 'geschlossen_morgen';
+
+    public static function get_table_name() 
+    {
+        global $wpdb;
+        return $wpdb->prefix . self::TABLE_NAME;
+    }
+
+    public static function install_table() 
+    {
+        try {
+            global $wpdb;
+            $charset_collate = $wpdb->get_charset_collate();
+            $table_name = self::get_table_name();
+
+			$sql = "CREATE TABLE IF NOT EXISTS $table_name (
+				`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+				`order_id` int(11) NOT NULL,
+				`first_name` varchar(55) NOT NULL,
+				`last_name` varchar(55) NOT NULL,
+				`ticket_code` varchar(20) NOT NULL,
+				`email` varchar(100) NOT NULL DEFAULT '',
+				`activated` BOOLEAN NOT NULL DEFAULT 0,
+				`birth_date` varchar(10) NOT NULL DEFAULT '',
+				`via_admin` BOOLEAN NOT NULL DEFAULT 0
+			) $charset_collate";
+
+			require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+			dbDelta( $sql );
+            update_option('geschlossen_morgen_db_version', self::VERSION);
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
+    /**
+     * add_new
+     * 
+     * We are just setting the ticket code here for full flexibility
+     * Firstname, lastname & birthdate will be set later.
+     * 
+     * @param [int] $order_id
+     * @return void
+     */
+    public static function add_new($order_id) 
+    {
+        global $wpdb;
+        $table_name = self::get_table_name();
+        $contains_rave_product = Helpers::is_rave_order($order_id);
+        if (!$contains_rave_product) return;
+        $ticket_code = bin2hex(random_bytes(6));
+
+        $wpdb->insert($table_name, [
+            'order_id' =>  $order_id,
+            'first_name' => '',
+            'last_name' => '',
+            'ticket_code' => $ticket_code,
+            'email' => '',
+            'birth_date' => ''
+        ], [
+            '%d',
+            '%s',
+            '%s',
+            '%s'
+        ]);
+    }
+
+    public static function is_ticket_code_valid($ticket_code)
+    {
+        global $wpdb;
+
+        $table_name = self::get_table_name();
+
+        $found = $wpdb->get_row($wpdb->prepare("SELECT * FROM {$table_name} WHERE ticket_code = %s AND activated = 0", $ticket_code));
+
+        if ($found) return true;
+        return false;
+    }
+
+    public static function signup_user_for_rave($formData)
+    {
+        global $wpdb;
+        $table_name = self::get_table_name();
+        $success = $wpdb->update(
+            $table_name,
+            [
+                'activated' => 1,
+                'first_name' => $formData['first_name'],
+                'last_name' => $formData['last_name'],
+                'birth_date' => $formData['birth_date'],
+                'email' => $formData['email'],
+            ],
+            [
+                'ticket_code' => $formData['ticket_code']
+            ],
+            [
+                '%d',
+                '%s',
+                '%s',
+                '%s'
+            ],
+            [
+                '%s'
+            ]
+        );
+        
+        if ($success !== false) {
+            return true;
+        }
+        return false;
+    }
+
+	
+    public static function get_ticket_code_by_order_id($order_id)
+    {
+        global $wpdb;
+
+        $table_name = self::get_table_name();
+
+        $ticket_code = $wpdb->get_var($wpdb->prepare("SELECT ticket_code FROM {$table_name} WHERE order_id = %d", $order_id));
+
+        if ($ticket_code) {
+            return $ticket_code;
+        }
+
+        return false;
+    }
+
+    public static function get_order_id_by_ticket_code($ticket_code)
+    {
+        global $wpdb;
+
+        $table_name = self::get_table_name();
+
+        $order_id = $wpdb->get_var($wpdb->prepare("SELECT order_id FROM {$table_name} WHERE ticket_code = %s", $ticket_code));
+
+        if ($order_id) {
+            return $order_id;
+        }
+
+        return false;
+    }
+}
+```
