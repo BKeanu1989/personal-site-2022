@@ -246,3 +246,5 @@ class DatabaseTable {
     }
 }
 ```
+The highlighted lines handle the 'version control' for the table. If you ever need to alter it.
+
