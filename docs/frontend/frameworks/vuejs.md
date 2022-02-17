@@ -16,3 +16,9 @@ One of the biggest disadvantages for using Vue3 is that some frameworks are stil
 #### Vue use (core)
 
 #### Nuxt
+
+
+
+### Blog
+vmodel props input vue 3 in components
+

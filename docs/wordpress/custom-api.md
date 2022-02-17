@@ -37,3 +37,14 @@ If you don’t use pretty permalinks, use “?rest_route=” instead of “wp-js
 
 so I changed it to prettylink
 
+rest client instead of postman
+
+current_user_can
+
+vite
+
+# important
+use btob function for encoding coding string 
+```js
+const base64EncodedAuthString = `Basic ${btoa(USERNAME + ':' + PASSWORD)}`
+```

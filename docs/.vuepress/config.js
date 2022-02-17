@@ -140,6 +140,17 @@ module.exports = {
                     },
                 ]
             }
+        ], 
+        '/interesting': [
+            {
+                text: 'Miscelanneous',
+                children: [
+                    {
+                        text: 'Curl Problems',
+                        link: '/interesting/curl-debug.md'
+                    }
+                ]
+            }
         ]
     }
   },
