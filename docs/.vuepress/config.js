@@ -148,6 +148,10 @@ module.exports = {
                     {
                         text: 'Curl Problems',
                         link: '/interesting/curl-debug.md'
+                    },
+                    {
+                        text: 'Cross Browser Problems',
+                        link: '/interesting/x-browser.md'
                     }
                 ]
             }

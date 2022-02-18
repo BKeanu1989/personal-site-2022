@@ -1,4 +1,4 @@
-# resource
+# Curl Problems
 https://stackoverflow.com/questions/3757071/php-debugging-curl
 
 For some unknown reason my curl call to 'http://localhost:3000' didn't work as expected.
