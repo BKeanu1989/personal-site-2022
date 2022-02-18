@@ -138,6 +138,10 @@ module.exports = {
                         text: 'Plugin Development Template & Database',
                         link: '/tutorials/plugin-development-template.md'
                     },
+                    {
+                        text: 'Plugin Development Form',
+                        link: '/tutorials/plugin-dev-rave.md'
+                    }
                 ]
             }
         ], 
