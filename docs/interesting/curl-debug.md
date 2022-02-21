@@ -27,3 +27,24 @@ So I needed to know how to debug this problem. Luckily curl has some inbuilt ver
 ```
 
 In the errorlog.txt I saw that the curl call is not going to 'http://localhost:3000' but '127.0.0.1:3000' which is the address of my local machine. So I needed to do some more googling... And to be honest, I didn't want to hassle with that anymore, so I just used NodeJs. I had to use for something else anyway. So why not just use it for that as well? :) 
+
+
+---
+
+And after just a few days I needed it to work in another wordpress project. I used [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle) for that.
+And I got the following
+
+```
+[21-Feb-2022 15:11:44 UTC] cURL error 7: Failed to connect to localhost port 8080: Connection refused (see https://curl.haxx.se/libcurl/c/libcurl-errors.html)
+```
+
+My docker-compose file exposes port 8080. So that shouldn't be the problem.
+It's working with javascript fetch though, so it kinda lead me to headers. The browser automatically sets some headers. (which one?)
+
+
+---
+
+use my local network address ipv4
+
+192.168.178.54
+
