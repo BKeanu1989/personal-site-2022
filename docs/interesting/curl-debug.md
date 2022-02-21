@@ -47,4 +47,11 @@ It's working with javascript fetch though, so it kinda lead me to headers. The b
 use my local network address ipv4
 
 192.168.178.54
+or 
+172.18.0.1
 
+as seen in docker verbose?
+
+```
+docker-compose --verbose up
+´´´
