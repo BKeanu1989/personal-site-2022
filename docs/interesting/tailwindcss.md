@@ -10,3 +10,12 @@ Just with a prefix 'dark:' you can easily add the CSS feature in dark mode. By d
 
 A very useful feature is the extension for [VS Code](https://code.visualstudio.com/). Just go to extensions and search Tailwind Css IntelliSense. After installing you get all the autocompletion you can imagine. It also supports prefixes if you can't use the default class names.
 
+
+---
+## Darkmode
+If you are using a specific prefix in the config file of tailwind (tailwind.config.js) with 'class' for toggling:
+```
+darkMode: 'class',
+prefix: 'tw-'
+```
+you need to add 'PREFIX-dark' to the documentElement
