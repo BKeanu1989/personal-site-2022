@@ -4,3 +4,5 @@ canvas
 
 vue use core
 useDraggable
+
+aspect ratio
