@@ -10,3 +10,8 @@ let myString: string = "Banana";
 let myFruit: Fruit = myString as Fruit;
 
 ```
+
+tsconfig.json
+
+    // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
+    // "types": [],  
