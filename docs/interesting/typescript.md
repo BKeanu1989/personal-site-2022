@@ -15,3 +15,15 @@ tsconfig.json
 
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
     // "types": [],  
+
+
+
+---
+```js
+declare global {
+    interface Window {
+        clientConfig: any
+    }
+}
+```
+
