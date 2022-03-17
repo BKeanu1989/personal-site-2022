@@ -19,7 +19,11 @@ tsconfig.json
 
 
 ---
+in declaration file
+some-example.d.ts
+
 ```js
+
 declare global {
     interface Window {
         clientConfig: any
