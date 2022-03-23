@@ -19,3 +19,7 @@ darkMode: 'class',
 prefix: 'tw-'
 ```
 you need to add 'PREFIX-dark' to the documentElement
+
+
+## responsive tables
+https://tailwind-elements.com/docs/standard/components/tables/
