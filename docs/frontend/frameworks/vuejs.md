@@ -22,3 +22,27 @@ One of the biggest disadvantages for using Vue3 is that some frameworks are stil
 ### Blog
 vmodel props input vue 3 in components
 
+
+## passing events from parent to children
+
+(via ref?)
+https://stackoverflow.com/questions/67371579/vue-3-emit-event-from-parent-to-child-component
+
+
+https://vueshowcase.com/question/how-to-get-and-observe-ref-to-element-from-a-v-for
+
+```
+Unlike SFCs with a regular <script> block, <script setup> components are closed by default -- i.e. variables inside the <script setup> scope are not exposed to the parent unless explicitly exposed via defineExpose(). An empty object in the logged template ref implies you haven't exposed any properties.
+```
+
+--> upgrade vue
+
+error:
+```
+runtime-core.esm-bundler.js?5c40:38 [Vue warn]: Invalid vnode type when creating vnode: undefined. 
+```
+
+solution in vue.config.js uunder configureWebpack -> resolve 
+            alias: {
+                vue: path.resolve(`./node_modules/vue`)
+            }
