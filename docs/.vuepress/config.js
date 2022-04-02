@@ -74,7 +74,7 @@ module.exports = {
             ]
         },
         {
-            text: 'Miscellaneous',
+            text: 'Interesting',
             children: [
                 {
                     link: '/interesting/tailwindcss.md',
@@ -84,7 +84,9 @@ module.exports = {
                     link: '/interesting/resources.md',
                     text: 'Resources'
                 },
-                
+                // {
+                    
+                // }
             ]
         },
         {
@@ -156,6 +158,18 @@ module.exports = {
                     {
                         text: 'Cross Browser Problems',
                         link: '/interesting/x-browser.md'
+                    },
+                    {
+                        text: 'Woocommerce Confirmation Email',
+                        link: '/interesting/woocommerce-confirmation-email.md'
+                    },
+                    {
+                        text: 'Error Handling',
+                        link: '/interesting/error-handling.md'
+                    },
+                    {
+                        text: 'Beautiful Human',
+                        link: '/interesting/beautiful-human.md'
                     }
                 ]
             }

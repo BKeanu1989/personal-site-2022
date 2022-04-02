@@ -48,3 +48,4 @@ use btob function for encoding coding string
 ```js
 const base64EncodedAuthString = `Basic ${btoa(USERNAME + ':' + PASSWORD)}`
 ```
+

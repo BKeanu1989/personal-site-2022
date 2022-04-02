@@ -16,3 +16,6 @@ Note that you need to have git for windows installed.
 You can revert it by running:
 npm config delete script-shell
 ```
+
+## is this still relevant?
+lookup safeboxen build process 

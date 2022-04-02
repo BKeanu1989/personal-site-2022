@@ -41,8 +41,23 @@ error:
 ```
 runtime-core.esm-bundler.js?5c40:38 [Vue warn]: Invalid vnode type when creating vnode: undefined. 
 ```
+https://stackoverflow.com/questions/68293064/vue-3-invalid-vnode-type
 
-solution in vue.config.js uunder configureWebpack -> resolve 
+probable solution in vue.config.js uunder configureWebpack -> resolve 
             alias: {
                 vue: path.resolve(`./node_modules/vue`)
             }
+
+```
+runtime-core.esm-bundler.js?5c40:38 [Vue warn]: Plugin has already been applied to target app.
+```
+
+
+- [ ] https://github.com/vuejs/vue-cli/issues/2754
+
+use services more for:
+- [ ] data sources
+    - [ ] api 
+    - [ ] database
+
+use car service .get

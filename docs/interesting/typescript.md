@@ -36,3 +36,12 @@ declare global {
 Type '{ class: string; }' is not assignable to type 'DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>'.
   Property 'class' does not exist on type 'DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>'. Did you mean 'className'?
 ```
+
+for rxjs
+source: https://stackoverflow.com/questions/54475893/typescript-type-x-is-missing-the-following-properties-from-type-y-length-pop
+```ts
+
+public getProducts(): Observable<Product[]> {
+    return this.http.get<Product[]>(`api/products/v1/`);
+}
+```
