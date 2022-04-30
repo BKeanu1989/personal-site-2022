@@ -36,6 +36,14 @@ module.exports = {
                 {
                     link: '/backend/php.md',
                     text: 'PHP'
+                },
+                {
+                    link: '/backend/python.md',
+                    text: 'Python'
+                },
+                {
+                    link: '/backend/ruby.md',
+                    text: 'Ruby'
                 }
             ]
         }, 
@@ -126,6 +134,16 @@ module.exports = {
             {
                 text: 'Learnings',
                 link: '/electron/learnings.md'
+            }
+        ],
+        '/sysadmin': [
+            {
+                text: 'Docker',
+                link: '/sysadmin/docker.md'
+            },
+            {
+                text: 'Linux',
+                link: '/sysadmin/linux.md'
             }
         ],
         '/tutorials': [
