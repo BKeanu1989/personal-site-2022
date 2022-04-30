@@ -51,16 +51,8 @@ module.exports = {
             text: 'Frontend',
             children: [
                 {
-                    link: '/frontend/frameworks/vuejs.md',
-                    text: 'VueJs'
-                }, 
-                {
-                    link: '/frontend/frameworks/angular.md',
-                    text: 'Angular'
-                },
-                {
-                    link: '/frontend/frameworks/react.md',
-                    text: 'React'
+                    link: '/frontend/frameworks.md',
+                    text: 'Frameworks'
                 },
                 {
                     link: '/frontend/html.md',
@@ -128,6 +120,21 @@ module.exports = {
                         text: 'Boilerplate'
                     }
                 ]
+            }
+        ],
+        '/frontend': [
+            {
+                text: 'Frameworks',
+                link: '/frontend/frameworks.md'
+            }, 
+            {
+                text: 'HTML',
+                link: '/frontend/html.md'
+
+            },
+            {
+                text: 'CSS',
+                link: '/frontend/css.md'
             }
         ],
         '/electron': [
