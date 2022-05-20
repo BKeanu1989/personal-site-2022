@@ -61,3 +61,7 @@ use services more for:
     - [ ] database
 
 use car service .get
+
+
+---
+shallowRef for performance of large datasets. only "root" is reactive 
