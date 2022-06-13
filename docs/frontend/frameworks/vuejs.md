@@ -65,3 +65,7 @@ use car service .get
 
 ---
 shallowRef for performance of large datasets. only "root" is reactive 
+
+
+## Component Library
+https://blog.logrocket.com/building-vue-3-component-library/
