@@ -44,4 +44,11 @@ foreach(mb_list_encodings() as $chr){
     echo mb_convert_encoding($post_content, 'UTF-8', $chr)." : ".$chr."<br>";   
     echo "<br>";
 }   
+
+```
+```txt
+open office calc
+open with Windows Latin Encoding
+save as new file with encoding via 'save' interface 
+
 ```
