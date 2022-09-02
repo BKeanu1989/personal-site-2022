@@ -1,3 +1,5 @@
+const {path} = require('@vuepress/utils')
+
 module.exports = {
   // site config
 //   lang: 'de-DE',
@@ -266,12 +268,30 @@ module.exports = {
                     }
                 ]
             }
+        ],
+        '/webdevelopment/news': [
+            {
+                text: 'News',
+                children: [
+                    {
+                        text: 'Temporal API',
+                        link: '/webdevelopment/news/TemporalApi.md'
+                    }
+                ]
+            }
         ]
     }
   },
   plugins: [
       [
         '@vuepress/plugin-search',
-      ]
+        
+      ],
+    //   [
+    //     '@vuepress/register-components',
+    //     {
+    //         componentsDir: path.resolve(__dirname, 'components')
+    //     }
+    //   ]
   ],
 }
