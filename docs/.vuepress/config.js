@@ -1,8 +1,8 @@
 module.exports = {
   // site config
-  lang: 'de-DE',
-  title: 'Persönlicher Blog - Kevin Fechner',
-  description: '(Un)interessante Dinge im Leben eines Entwicklers',
+//   lang: 'de-DE',
+  title: 'Blog - Kevin Fechner',
+  description: '(Un)interesting things in a life of a developer',
 
   // theme and its config
   theme: '@vuepress/theme-default',
@@ -10,93 +10,161 @@ module.exports = {
     logo: 'https://vuejs.org/images/logo.png',
     navbar: [
         {
-            text: 'Wordpress',
-            link: '/wordpress/'
-        }, 
-        {
-            text: 'Systemadministration',
+            text: 'Web Development',
+            link: '/webdevelopment',
             children: [
                 {
-                    link: '/sysadmin/docker.md',
-                    text: 'Docker'
+                    text: 'Frameworks',
+                    link: '/webdevelopment/frameworks'
+                },
+                {
+                    text: 'Tutorials',
+                    link: '/webdevelopment/tutorials'
                 }, 
                 {
-                    link: '/sysadmin/hoster.md',
-                    text: 'Hoster'
-                }
-            ]
-        }, 
-        {
-            text: 'Backend',
-            children: [
-                {
-                    link: '/backend/nodejs.md',
-                    text: 'NodeJS'
-                }, 
-                {
-                    link: '/backend/php.md',
-                    text: 'PHP'
+                    text: 'Tools',
+                    link: '/webdevelopment/tools'
                 },
                 {
-                    link: '/backend/python.md',
-                    text: 'Python'
+                    text: 'Resources',
+                    link: '/webdevelopment/resources'
                 },
                 {
-                    link: '/backend/ruby.md',
-                    text: 'Ruby'
-                }
-            ]
-        }, 
-        {
-            text: 'Frontend',
-            children: [
-                {
-                    link: '/frontend/frameworks.md',
-                    text: 'Frameworks'
-                },
-                {
-                    link: '/frontend/html.md',
-                    text: 'HTML'
-                },
-                {
-                    link: '/frontend/css.md',
-                    text: 'CSS'
+                    text: 'News',
+                    link: '/webdevelopment/news'
                 }
             ]
         },
         {
-            text: 'Tutorials',
+            text: 'Web Design',
+            link: '/webdesign'
+        },
+        {
+            text: 'Artificial Intelligence',
+            link: '/ai'
+        },
+        {
+            text: 'Internet of Things',
+            link: '/iot'
+        },
+        {
+            text: 'Personal',
+            link: '/personal',
             children: [
                 {
-                    link: '/tutorials/plugin-development-setup.md',
-                    text: 'Plugin Development'
+                    text: 'Books',
+                    link: '/personal/books'
+                }
+
+            ]
+        }, 
+        {
+            text: 'Software Development',
+            link: '/softwaredevelopment',
+            children: [
+                {
+                    text: 'Electron',
+                    link: '/softwaredevelopment/electron'
+                },
+                {
+                    text: 'Tauri',
+                    link: '/softwaredevelopment/tauri'
                 }
             ]
         },
-        {
-            text: 'Interesting',
-            children: [
-                {
-                    link: '/interesting/tailwindcss.md',
-                    text: 'TailwindCss'
-                },
-                {
-                    link: '/interesting/resources.md',
-                    text: 'Resources'
-                },
-                // {
+
+        // {
+        //     text: 'Programming Languages',
+        //     link: '/programming-languages'
+        // }
+        // {
+        //     text: 'Wordpress',
+        //     link: '/wordpress/'
+        // }, 
+        // {
+        //     text: 'Systemadministration',
+        //     children: [
+        //         {
+        //             link: '/sysadmin/docker.md',
+        //             text: 'Docker'
+        //         }, 
+        //         {
+        //             link: '/sysadmin/hoster.md',
+        //             text: 'Hoster'
+        //         }
+        //     ]
+        // }, 
+        // {
+        //     text: 'Backend',
+        //     children: [
+        //         {
+        //             link: '/backend/nodejs.md',
+        //             text: 'NodeJS'
+        //         }, 
+        //         {
+        //             link: '/backend/php.md',
+        //             text: 'PHP'
+        //         },
+        //         {
+        //             link: '/backend/python.md',
+        //             text: 'Python'
+        //         },
+        //         {
+        //             link: '/backend/ruby.md',
+        //             text: 'Ruby'
+        //         }
+        //     ]
+        // }, 
+        // {
+        //     text: 'Frontend',
+        //     children: [
+        //         {
+        //             link: '/frontend/frameworks.md',
+        //             text: 'Frameworks'
+        //         },
+        //         {
+        //             link: '/frontend/html.md',
+        //             text: 'HTML'
+        //         },
+        //         {
+        //             link: '/frontend/css.md',
+        //             text: 'CSS'
+        //         }
+        //     ]
+        // },
+        // {
+        //     text: 'Tutorials',
+        //     children: [
+        //         {
+        //             link: '/tutorials/plugin-development-setup.md',
+        //             text: 'Plugin Development'
+        //         }
+        //     ]
+        // },
+        // {
+        //     text: 'Interesting',
+        //     children: [
+        //         {
+        //             link: '/interesting/tailwindcss.md',
+        //             text: 'TailwindCss'
+        //         },
+        //         {
+        //             link: '/interesting/resources.md',
+        //             text: 'Resources'
+        //         },
+        //         // {
                     
-                // }
-            ]
-        },
-        {
-            text: 'Electron',
-            link: '/electron/'
-        },
-        {
-            text: 'Fitness',
-            link: '/fitness/'
-        }
+        //         // }
+        //     ]
+        // },
+        // {
+        //     text: 'Electron',
+        //     link: '/electron/'
+        // },
+        // {
+        //     text: 'Fitness',
+        //     link: '/fitness/'
+        // }
     ],
     sidebar: {
         '/wordpress/': [
