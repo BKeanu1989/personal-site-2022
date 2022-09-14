@@ -16,6 +16,9 @@ npm install temporal-polyfill
 
 ```
 
+Link to [codesandbox](https://codesandbox.io/s/keen-meitner-s0joku?file=/src/index.js)
+
+
 Let's work on some use cases:
 - [x] diff
 - [ ] time ago
@@ -48,8 +51,13 @@ const diff3 = christmas.until(newYear).round({
 console.log(diff.toString()); // P372DT6H
 console.log(diff2.toString()); // P373D
 console.log(diff3.toString()); // P372D
-```
 
+```
+The return value always begins with a 'P'.
+xxx Days
+
+T begins the time stamp.
+H = hours
 ## Adding or subtracting
 
 ## Timezones
