@@ -1,5 +1,11 @@
 # Picture tag in Wordpress
 ```php
+
+...
+
+    $dir = wp_upload_dir();
+    $this->upload_dir = $dir['baseurl'];
+...
 protected function findPictureForArtist($gallery_ids, $title, $permalink) {
         $img_id = $gallery_ids[0];
 
