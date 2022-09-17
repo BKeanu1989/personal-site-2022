@@ -94,3 +94,12 @@ add_filter('the_content', 'webp_picture_fix', 9999);
 
 ## Add image sizes
 https://developer.wordpress.org/reference/functions/add_image_size/
+
+
+### file formats
+avif
+upload mimes avif not working
+
+even via upload_mimes not working
+
+had to install "Lord of the Files: Enhanced Upload Security"
