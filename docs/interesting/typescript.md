@@ -45,3 +45,15 @@ public getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(`api/products/v1/`);
 }
 ```
+
+index.d.ts
+package.json -> typings
+
+## in js files
+```js
+/**
+ * @typedef { import("../types/holdersArea").LiveTokensData }
+ * @typedef { import("../types/holdersArea").HoldersArea }
+ * @typedef { import("../types/holdersArea").ShowBackStory }
+ */
+```
