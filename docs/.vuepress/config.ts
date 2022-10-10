@@ -1,4 +1,6 @@
 import { defineUserConfig, defaultTheme } from 'vuepress'
+import { searchPlugin } from '@vuepress/plugin-search'
+
 
 export default defineUserConfig({
   lang: 'en-US',
@@ -16,7 +18,16 @@ export default defineUserConfig({
         },
         {
             text: 'Interesting',
-            link: '/interesting'
+            children: [
+                {
+                    text: 'Bucketlist',
+                    link: '/interesting'
+                },
+                {
+                    text: 'Snippets',
+                    link: '/snippets'
+                }
+            ]
         },
         {
             text: 'Projects',
@@ -27,13 +38,23 @@ export default defineUserConfig({
             link: '/tutorials',
         },
         {
-            text: 'Personal Thoughts',
-            link: '/personalthoughts'
+            text: 'About Me',
+            children: [
+                {
+                    text: 'About me',
+                    link: '/personal'
+                },
+            ]
         },
         {
             text: 'Web Development',
             link: '/webdevelopment'
         }
       ],
-  })
+  }),
+  plugins: [
+    searchPlugin({
+      // options
+    }),
+  ],
 })

@@ -4,9 +4,3 @@
 
 ## Festival Survival
 
-## PWA
-
-## Open Routing
-
-## Tauri (Rust)
-
