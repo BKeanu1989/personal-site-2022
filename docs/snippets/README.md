@@ -1,4 +1,4 @@
-# Resources
+# Snippets
 
 ## Docker
 

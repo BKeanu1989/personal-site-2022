@@ -24,7 +24,7 @@ I'm thinking about everyday challenges and how I, as a programmer, can come up w
 
 #### Learning
 - [ ] Rust
-
+- [ ] IT Security
 
 #### Some knowledge
 - [ ] Python

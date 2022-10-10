@@ -52,3 +52,24 @@ open with Windows Latin Encoding
 save as new file with encoding via 'save' interface 
 
 ```
+
+## [degit](https://github.com/Rich-Harris/degit)
+boilerplate installs via user/repo link. can bis used as
+```zh
+npx degit
+```
+
+:::: code-group
+::: code-group-item 
+```zh
+degit user/repo
+
+```
+:::
+::: code-group-item example 1
+```zh
+npx degit https://github.com/huibizhang/template-vite-vue-ts-tailwind-v3 tailwind-vue3
+
+```
+:::
+::::
