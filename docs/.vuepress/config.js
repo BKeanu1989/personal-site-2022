@@ -275,6 +275,10 @@ module.exports = {
           text: "Map Routing (Open Source)",
           link: "/tutorials/open-routing",
         },
+        {
+          text: "Temporal Api",
+          link: "/webdevelopment/news/temporalApi.md",
+        },
       ],
       "/snippets": [
         {
@@ -323,6 +327,10 @@ module.exports = {
             {
               text: "Typescript",
               link: "/interesting/typescript.md",
+            },
+            {
+              text: "Local SSL",
+              link: "/interesting/local-ssl",
             },
           ],
         },
