@@ -255,6 +255,26 @@ module.exports = {
             },
           ],
         },
+        {
+          text: "Progress Web Apps (PWA)",
+          link: "/tutorials/pwa",
+        },
+        // {
+        //     text: 'Docker',
+        //     link: ''
+        // },
+        {
+          text: "QR Codes",
+          link: "/tutorials/qr-code",
+        },
+        {
+          text: "Chat (Web Sockets)",
+          link: "/tutorials/chat",
+        },
+        {
+          text: "Map Routing (Open Source)",
+          link: "/tutorials/open-routing",
+        },
       ],
       "/snippets": [
         {
@@ -299,6 +319,10 @@ module.exports = {
             {
               text: "Beautiful Human",
               link: "/interesting/beautiful-human.md",
+            },
+            {
+              text: "Typescript",
+              link: "/interesting/typescript.md",
             },
           ],
         },

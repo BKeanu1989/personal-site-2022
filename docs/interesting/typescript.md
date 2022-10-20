@@ -57,3 +57,13 @@ package.json -> typings
  * @typedef { import("../types/holdersArea").ShowBackStory }
  */
 ```
+
+## index.d.ts
+all of your typings
+
+in package.json
+
+```
+"types": "PATH TO INDEX.d.ts"
+
+```
