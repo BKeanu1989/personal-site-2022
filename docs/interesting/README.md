@@ -15,3 +15,4 @@ There are at least two huge advantages using dark mode themes
 ### Disadvantages
 - Display might not be visible in broad daylight
 - Scans (eg. QR Codes) need higher contrast -> light theme 
+ 

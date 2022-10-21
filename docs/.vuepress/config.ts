@@ -20,12 +20,16 @@ export default defineUserConfig({
             text: 'Interesting',
             children: [
                 {
-                    text: 'Bucketlist',
+                    text: 'Home',
                     link: '/interesting'
                 },
                 {
                     text: 'Snippets',
                     link: '/snippets'
+                },
+                {
+                    text: 'Bucket',
+                    link: '/interesting/bucket'
                 }
             ]
         },
@@ -49,7 +53,7 @@ export default defineUserConfig({
         {
             text: 'Web Development',
             link: '/webdevelopment'
-        }
+        },
       ],
   }),
   plugins: [
