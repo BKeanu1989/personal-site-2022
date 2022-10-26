@@ -6,6 +6,8 @@
 - Lerna
 
 ### Sources
+https://www.youtube.com/watch?v=o2RJnz96YXo
+
 
 ### My FAQ's
 
